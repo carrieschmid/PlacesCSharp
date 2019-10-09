@@ -1,0 +1,15 @@
+@using Places.Models;
+
+<h1>Place you have been</h1>
+<ul>
+    @foreach (Place place in Model)
+    {
+      <li>@place.CityName</li>
+      <li>@place.Days</li>
+      <li>@place.Person</li>
+      <li>@place.Journal</li>
+    }
+  </ul>
+  
+  <li><a href="/place/new">Add a new entry.</a></li>
+

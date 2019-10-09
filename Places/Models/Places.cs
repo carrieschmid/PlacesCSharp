@@ -21,13 +21,20 @@ namespace Places.Models
         Person = person;
         Journal = journal;
         _instances.Add(this);
+       
 
+    }
+
+    public static void ClearAll()
+    {
+      _instances.Clear();
     }
 
   public static List<Place> GetAll()
     {
       return _instances;
     }
+
     }
 
 }
