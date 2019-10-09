@@ -1,5 +1,9 @@
 @using Places.Models;
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'> 
+<link rel="stylesheet" type="text/css" runat="server" media="screen" href="~/css/Stylesheet.css" />
 
+
+<div class="index">
 <h1>Place you have been</h1>
 <ul>
     @foreach (Place place in Model)
@@ -12,4 +16,5 @@
   </ul>
   
   <li><a href="/place/new">Add a new entry.</a></li>
+</div>
 

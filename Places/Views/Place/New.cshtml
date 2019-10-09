@@ -1,11 +1,26 @@
-<form action="/place" method="post">
+<!DOCTYPE html>
+<html>
+<head>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'> 
+<link rel="stylesheet" type="text/css" runat="server" media="screen" href="~/css/Stylesheet.css" />
+</head>
+<body>
+  <h1>Add Cities you have visited</h1>
+<form class="form" action="/place" method="post">
   <label for="cityName">Add a City</label>
   <input id="cityName" name="cityName" type="text">
+  <br>
   <label for="days">Add how many days you stayed there</label>
   <input id="days" name="days" type="text">
+  <br>
   <label for="person">Add name of the person you visited with</label>
   <input id="person" name="person" type="text">
+  <br>
   <label for="journal">Add Journal</label>
   <input id="journal" name="journal" type="text">
-  <button type="submit">Submit</button>
+  <br>
+  <button class="btn btn-primary" type="submit">Submit</button>
+  <br>
 </form>
+</body>
+</html>
